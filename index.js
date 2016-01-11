@@ -65,8 +65,7 @@ function getMessage (test, fail) {
 
   var error = fail.error
   if (error && error.expected && error.actual) {
-    message += '\n  Expected: ' + error.expected +
-      '\n  Actual: ' + error.actual
+    message += '\n' + error.raw
   }
 
   return message
